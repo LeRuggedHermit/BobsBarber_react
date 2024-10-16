@@ -1,0 +1,271 @@
+main {
+  margin-top: 2rem;
+  overflow-x: hidden;
+
+  /*opacity: 0; /* Start with the content invisible */
+  /* visibility: hidden; /* Optional: ensure it's hidden until the animation starts */
+}
+
+.presentation {
+  width: 100%;
+  margin-bottom: 4rem;
+}
+
+.content-1 {
+  margin-left: 6vmin;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/*-------------------------------------------Grund-puffar------------------------------*/
+
+.push {
+  font-size: 3.2rem;
+  font-family: "Sigmar", sans-serif;
+}
+
+.push a {
+  text-decoration: none;
+  color: #a4364a; /* Text color */
+  padding: 5px 0; /* Space around the text */
+  display: inline-block;
+  position: relative;
+}
+
+.push a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px; /* Thickness of the underline */
+  background-color: #a4364a; /* Color of the underline */
+  transition: width 0.3s ease-in-out; /* Animation effect */
+}
+
+.push a:hover::after {
+  width: 100%; /* Expand the underline */
+}
+
+/*---------------------------------------------Profil-bild-------------------------*/
+
+.pb-container {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.PB {
+  width: 15rem;
+  height: 15rem;
+  object-fit: cover;
+  border: solid #a4364a 2px;
+  border-radius: 50%;
+}
+
+/*----------------------------------------------Presentation-------------------------*/
+
+.presenting {
+  color: blanchedalmond;
+  font-size: 1.8rem;
+  font-family: "Sigmar", sans-serif;
+  width: 60%;
+  margin-left: 6vmin;
+}
+
+/*--------------------------------------------Bilder-----------------*/
+
+.images {
+  width: 100%;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+
+  margin-bottom: 10rem;
+}
+
+.image-box-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+  gap: 4vmin;
+}
+
+.store-pic {
+  height: 12rem;
+  width: 8rem;
+  object-fit: cover;
+}
+
+/*---------------------------------Slut-puffen----------------------------------------*/
+
+.final-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 10rem;
+}
+
+.final-push {
+  border-radius: 50%;
+  width: 25rem;
+  height: 25rem;
+  padding: 2rem;
+  text-align: center;
+  border: solid #a4364a 4px;
+  color: blanchedalmond;
+  font-family: "Sigmar", sans-serif;
+  background-color: rgb(76, 154, 128);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.final-push a {
+  text-decoration: none;
+  color: #a4364a; /* Text color */
+  padding: 5px 0; /* Space around the text */
+  display: inline-block;
+  position: relative;
+}
+
+.final-push a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px; /* Thickness of the underline */
+  background-color: #a4364a; /* Color of the underline */
+  transition: width 0.3s ease-in-out; /* Animation effect */
+}
+
+.final-push a:hover::after {
+  width: 100%; /* Expand the underline */
+}
+
+/*.......................................MEDIA-QUERIES.................................*/
+
+/*För XS-skärmar*/
+@media only screen and (min-width: 300px) and (max-width: 400px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+  }
+
+  .push {
+    font-size: 1.2rem;
+    font-family: "Sigmar", sans-serif;
+  }
+
+  .presentation {
+    width: 90%;
+  }
+
+  .presenting {
+    color: blanchedalmond;
+    font-size: 1rem;
+    font-family: "Sigmar", sans-serif;
+    width: 80%;
+    margin-left: 6vmin;
+  }
+
+  .content-1 {
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin: 0;
+    width: 80%;
+  }
+
+  .pb-container {
+    width: 100px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  #PB {
+    width: 50px;
+    aspect-ratio: 1;
+  }
+
+  .image-box-container {
+    flex-direction: column;
+  }
+
+  .final-push {
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+  }
+
+  #g_map {
+    width: 200px;
+    height: 150px;
+  }
+}
+
+/*För S-skärmar*/
+@media only screen and (min-width: 401px) and (max-width: 700px) {
+  .push {
+    font-size: 1.2rem;
+    font-family: "Sigmar", sans-serif;
+  }
+
+  #PB {
+    width: 5em;
+    height: 5rem;
+  }
+
+  .content-1 {
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+  }
+  .presenting {
+    color: blanchedalmond;
+    font-size: 1rem;
+    font-family: "Sigmar", sans-serif;
+    width: 80%;
+    margin-left: 6vmin;
+  }
+
+  .image-box-container {
+    flex-direction: column;
+  }
+
+  #g_map {
+    width: 350px;
+    height: 250px;
+  }
+
+  .final-push {
+    width: 8rem;
+    height: 8rem;
+  }
+}
+
+/*För M-skärmar*/
+@media only screen and (min-width: 701px) and (max-width: 950px) {
+  .push {
+    font-size: 2.2rem;
+    font-family: "Sigmar", sans-serif;
+  }
+}

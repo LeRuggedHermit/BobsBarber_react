@@ -1,0 +1,74 @@
+.about-content-container {
+  color: blanchedalmond;
+  width: 60%;
+  margin-left: 4vmin;
+}
+
+/* Hide the content initially */
+.about-content {
+  visibility: visible;
+  position: relative; /* Ensure the content is relative to its parent */
+  overflow: hidden; /* Ensure overflow doesn't clip elements */
+  transform: none !important; /* Override any pre-existing transforms */
+}
+
+.about-content-container p {
+  font-family: "Lemonade Farmhouse", sans-serif;
+  font-size: 1.4rem;
+}
+
+.about-content-container h1 {
+  font-family: "Sigmar", sans-serif;
+  color: #a4364a;
+  font-size: 1.6rem;
+}
+
+.slider-container {
+  overflow-x: hidden;
+  margin-top: 12rem;
+  height: 20rem;
+}
+
+#image-track > .image {
+  width: 40vmin;
+  height: 56vmin;
+  object-fit: cover;
+  object-position: 100% 50%;
+}
+
+#image-track {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  gap: 4vmin;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
+/*.......................................MEDIA-QUERIES.................................*/
+
+/*För XS-skärmar*/
+@media only screen and (max-width: 400px) {
+  .slider-container {
+    display: none;
+    opacity: 0;
+  }
+}
+
+/*För S-skärmar*/
+@media only screen and (min-width: 401px) and (max-width: 700px) {
+  .slider-container {
+    display: none;
+    opacity: 0;
+  }
+}
+
+/*För M-skärmar*/
+@media only screen and (min-width: 701px) and (max-width: 950px) {
+}
+
+/*För XL-skärmar: */
+@media only screen and (min-width: 1901px) {
+}

@@ -1,0 +1,48 @@
+/*----------------------------------- Sidans huvudinnehåll: -----------------------------------------*/
+
+main {
+  margin-top: 4rem;
+  overflow-x: hidden;
+
+  opacity: 0; /* Start with the content invisible */
+  visibility: hidden; /* Optional: ensure it's hidden until the animation starts */
+}
+
+.contact-info-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.contact-info {
+  color: #a4364a;
+  font-family: "Lemonade Farmhouse", sans-serif;
+  font-size: 2.3rem;
+  align-items: center;
+  align-content: center;
+  border: solid rgb(76, 154, 128);
+  padding: 2rem;
+}
+
+.contact-info ul {
+  list-style-type: none;
+}
+
+/*.......................................MEDIA-QUERIES.................................*/
+
+/*För XS-skärmar*/
+@media only screen and (max-width: 400px) {
+}
+
+/*För S-skärmar*/
+@media only screen and (min-width: 401px) and (max-width: 700px) {
+}
+
+/*För M-skärmar*/
+@media only screen and (min-width: 701px) and (max-width: 950px) {
+}
+
+/*För XL-skärmar: */
+@media only screen and (min-width: 1901px) {
+}

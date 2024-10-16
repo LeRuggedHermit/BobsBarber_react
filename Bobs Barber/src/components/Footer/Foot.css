@@ -1,0 +1,28 @@
+footer {
+  width: 100%;
+  color: blanchedalmond;
+}
+
+footer p {
+  margin-left: 4vmin;
+  font-family: "Lemonade Farmhouse", sans-serif;
+  font-size: 120%;
+}
+
+/*.......................................MEDIA-QUERIES.................................*/
+
+/*För XS-skärmar*/
+@media only screen and (max-width: 400px) {
+}
+
+/*För S-skärmar*/
+@media only screen and (min-width: 401px) and (max-width: 700px) {
+}
+
+/*För M-skärmar*/
+@media only screen and (min-width: 701px) and (max-width: 950px) {
+}
+
+/*För XL-skärmar: */
+@media only screen and (min-width: 1901px) {
+}

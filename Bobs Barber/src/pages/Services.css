@@ -1,0 +1,91 @@
+/*----------------------------------- Sidans huvudinnehåll: -----------------------------------------*/
+
+main {
+  margin-top: 4rem;
+  overflow-x: hidden;
+  color: #a4364a;
+  opacity: 0; /* Start with the content invisible */
+  visibility: hidden; /* Optional: ensure it's hidden until the animation starts */
+}
+
+.content-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  margin-top: 2.5rem;
+  margin-bottom: 4rem;
+}
+
+.service-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 8vmin;
+}
+
+.service-content h1 {
+  font-family: "Sigmar", sans-serif;
+}
+
+.service-content p {
+  font-family: "Lemonade Farmhouse", sans-serif;
+  font-size: 22px;
+}
+
+.img img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+.service-info {
+  width: 300px;
+}
+
+/*.......................................MEDIA-QUERIES.................................*/
+
+/*För XS-skärmar*/
+@media only screen and (min-width: 300px) and (max-width: 400px) {
+  .service-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 80%;
+  }
+}
+
+/*För S-skärmar*/
+@media only screen and (min-width: 401px) and (max-width: 700px) {
+  .service-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+  }
+
+  .service-content h1 {
+    width: 90%;
+  }
+
+  .service-info {
+    width: 80%;
+  }
+}
+
+/*För M-skärmar*/
+@media only screen and (min-width: 701px) and (max-width: 950px) {
+  .service-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+  }
+}
+
+/*För XL-skärmar: */
+@media only screen and (min-width: 1901px) {
+}

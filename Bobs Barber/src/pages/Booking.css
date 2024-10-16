@@ -1,0 +1,156 @@
+main {
+  margin-top: 4rem;
+  overflow-x: hidden;
+
+  opacity: 0; /* Start with the content invisible */
+  visibility: hidden; /* Optional: ensure it's hidden until the animation starts */
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  color: #a4364a;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  color: #a4364a;
+  gap: 1rem;
+  background-color: rgb(76, 154, 128);
+  padding: 4rem;
+  font-family: "Sigmar", sans-serif;
+}
+
+label {
+  font-family: "Sigmar", sans-serif;
+}
+
+input,
+select {
+  width: 200px;
+  height: 40px;
+}
+
+#calendar {
+  margin-bottom: 20px;
+  background-color: bisque;
+  padding: 4vmin;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.calendar-grid div {
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.available {
+  background-color: #4caf50;
+  color: white;
+}
+
+.booked {
+  background-color: #ff5733;
+  color: white;
+  cursor: not-allowed;
+}
+
+.selected {
+  background-color: #2196f3 !important;
+  color: white;
+}
+
+.calendar-grid div:hover:not(.booked):not(.selected) {
+  background-color: #45a049;
+}
+
+button {
+  background-color: #21f341;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #1e7be2;
+}
+
+.hidden {
+  display: none;
+}
+
+#feedback {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #a4364a;
+}
+
+#calendar-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#calendar-nav button {
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#calendar-nav button:hover {
+  background-color: #1e7be2;
+}
+
+#calendar-nav span {
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+#currentMonth {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#chosenDate {
+  color: #a4364a;
+}
+
+/*.......................................MEDIA-QUERIES.................................*/
+
+/*För XS-skärmar*/
+@media only screen and (max-width: 400px) {
+}
+
+/*För S-skärmar*/
+@media only screen and (min-width: 401px) and (max-width: 700px) {
+}
+
+/*För M-skärmar*/
+@media only screen and (min-width: 701px) and (max-width: 950px) {
+}
+
+/*För XL-skärmar: */
+@media only screen and (min-width: 1901px) {
+}

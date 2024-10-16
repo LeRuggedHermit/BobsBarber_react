@@ -1,0 +1,151 @@
+header {
+  height: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  font-family: "Sigmar", sans-serif;
+}
+
+/*Sidans namn*/
+
+.site-name {
+  color: blanchedalmond;
+  font-size: 2.9rem;
+  margin-left: 4vmin;
+}
+
+/*Meny-knapp: */
+
+.menu-btn {
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: rgb(76, 154, 128);
+  margin-right: 4vmin;
+  cursor: pointer;
+}
+
+/*--------------------------------------Navigering-----------------------------*/
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+}
+
+nav {
+  margin-right: 5rem;
+  opacity: 0;
+  font-family: "Lemonade Farmhouse", sans-serif;
+}
+
+.nav-menu {
+  list-style: none;
+  padding: 0;
+  font-weight: 600;
+  display: flex;
+  gap: 4vmin; /* Space between menu items */
+}
+
+.nav-menu li {
+  position: relative;
+  color: #a4364a; /* Text color */
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #a4364a; /* Text color */
+  font-size: 1.2rem;
+  padding: 5px 0; /* Space around the text */
+  display: inline-block;
+  position: relative;
+}
+
+.nav-menu a:hover {
+  color: rgb(76, 154, 128);
+}
+
+/* Hover effect */
+.nav-menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px; /* Thickness of the underline */
+  background-color: #a4364a; /* Color of the underline */
+  transition: width 0.3s ease-in-out; /* Animation effect */
+}
+
+.nav-menu a:hover::after {
+  width: 100%; /* Expand the underline */
+}
+
+/*.......................................MEDIA-QUERIES.................................*/
+
+/*XL-Skärmar: */
+@media only screen and (min-width: 1901px) {
+  header {
+    height: 6rem;
+    display: flex;
+    margin-bottom: 1rem;
+  }
+
+  .site-name {
+    font-size: 5.2rem;
+    margin-left: 4vmin;
+  }
+
+  .menu-btn {
+    height: 5.5rem;
+    width: 5.5rem;
+  }
+
+  .nav-menu a {
+    font-size: 2.5rem;
+  }
+}
+
+/*För M-skärmar*/
+@media only screen and (min-width: 701px) and (max-width: 950px) {
+  .site-name {
+    font-size: 2.2rem;
+    margin-left: 4vmin;
+  }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 700px) {
+  .site-name {
+    font-size: 1.2rem;
+    margin-left: 4vmin;
+  }
+  header {
+    height: 6rem;
+    display: flex;
+    margin-bottom: 1rem;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 399px) {
+  .site-name {
+    font-size: 1.2rem;
+    margin-left: 4vmin;
+  }
+  header {
+    height: 6rem;
+    display: flex;
+    margin-bottom: 1rem;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+  }
+
+  .nav-menu a {
+    font-size: 1.5rem;
+  }
+}
