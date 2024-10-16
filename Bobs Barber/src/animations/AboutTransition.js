@@ -1,7 +1,7 @@
 import { gsap } from "gsap";
 
 export const AboutTransition = () => {
-  const textElements = gsap.utils.toArray(".about-content"); // Getting array of elements
+  const textElements = gsap.utils.toArray(".about-content");
   console.log("Text elements found: ", textElements.length);
   const mainElement = document.querySelector("main");
 
@@ -11,7 +11,6 @@ export const AboutTransition = () => {
     opacity: 1,
   });
 
-  // Ensure that we're actually selecting elements for animation
   if (textElements.length === 0) {
     console.error("No text elements found for animation!");
     return;
@@ -20,17 +19,17 @@ export const AboutTransition = () => {
   gsap.fromTo(
     textElements,
     {
-      x: "-100%", // Starting from off-screen
-      opacity: 0, // Starting invisible
+      x: "-100%",
+      opacity: 0,
     },
     {
       duration: 1.5,
-      x: "0%", // End position (on-screen)
-      opacity: 1, // Fully visible
+      x: "0%",
+      opacity: 1,
       ease: "power1.out",
-      stagger: 0.5, // Adds delay between elements animating
+      stagger: 0.5,
       onComplete: () => {
-        console.log("Text animation completed."); // Verify completion
+        console.log("Text animation completed.");
       },
     }
   );

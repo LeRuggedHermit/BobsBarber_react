@@ -4,12 +4,11 @@
   margin-left: 4vmin;
 }
 
-/* Hide the content initially */
 .about-content {
   visibility: visible;
-  position: relative; /* Ensure the content is relative to its parent */
-  overflow: hidden; /* Ensure overflow doesn't clip elements */
-  transform: none !important; /* Override any pre-existing transforms */
+  position: relative;
+  overflow: hidden;
+  transform: none !important;
 }
 
 .about-content-container p {

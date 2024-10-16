@@ -2,8 +2,8 @@ main {
   margin-top: 2rem;
   overflow-x: hidden;
 
-  /*opacity: 0; /* Start with the content invisible */
-  /* visibility: hidden; /* Optional: ensure it's hidden until the animation starts */
+  /*opacity: 0;  */
+  /* visibility: hidden; */
 }
 
 .presentation {
@@ -27,8 +27,8 @@ main {
 
 .push a {
   text-decoration: none;
-  color: #a4364a; /* Text color */
-  padding: 5px 0; /* Space around the text */
+  color: #a4364a;
+  padding: 5px 0;
   display: inline-block;
   position: relative;
 }
@@ -39,13 +39,13 @@ main {
   left: 0;
   bottom: 0;
   width: 0;
-  height: 2px; /* Thickness of the underline */
-  background-color: #a4364a; /* Color of the underline */
-  transition: width 0.3s ease-in-out; /* Animation effect */
+  height: 2px;
+  background-color: #a4364a;
+  transition: width 0.3s ease-in-out;
 }
 
 .push a:hover::after {
-  width: 100%; /* Expand the underline */
+  width: 100%;
 }
 
 /*---------------------------------------------Profil-bild-------------------------*/
@@ -136,8 +136,8 @@ main {
 
 .final-push a {
   text-decoration: none;
-  color: #a4364a; /* Text color */
-  padding: 5px 0; /* Space around the text */
+  color: #a4364a;
+  padding: 5px 0;
   display: inline-block;
   position: relative;
 }
@@ -148,13 +148,13 @@ main {
   left: 0;
   bottom: 0;
   width: 0;
-  height: 2px; /* Thickness of the underline */
-  background-color: #a4364a; /* Color of the underline */
-  transition: width 0.3s ease-in-out; /* Animation effect */
+  height: 2px;
+  background-color: #a4364a;
+  transition: width 0.3s ease-in-out;
 }
 
 .final-push a:hover::after {
-  width: 100%; /* Expand the underline */
+  width: 100%;
 }
 
 /*.......................................MEDIA-QUERIES.................................*/

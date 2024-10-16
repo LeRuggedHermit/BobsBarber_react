@@ -2,8 +2,8 @@ main {
   margin-top: 4rem;
   overflow-x: hidden;
 
-  opacity: 0; /* Start with the content invisible */
-  visibility: hidden; /* Optional: ensure it's hidden until the animation starts */
+  opacity: 0;
+  visibility: hidden;
 }
 
 .form {
